@@ -40,7 +40,7 @@ The exercise is to model Skynet and Terminators using Elixir. A user can spawn T
 - You don't need to keep track of ancestry / hierarchy.
 - Expect this part to be run and manually tested in `iex`.
 
-### The API / UI
+### The Web UI
 
 Create a simple web UI for managing terminators
 
