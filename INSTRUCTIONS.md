@@ -31,27 +31,36 @@ The exercise is to model Skynet and Terminators using Elixir. A user can spawn T
   - Every 5 seconds, each terminator has a 20% chance of reproducing, creating 1 new terminator.
     - Terminator's can reproduce more than once. They're trying to take over the world, after all.
   - Every 10 seconds, each terminator has a 25% chance to be killed by Sarah Connor.
-- Each terminator should have a unique ID.
+- Each terminator should have three fields
+1. A unique ID
+2. A unique name
+3. A status restricted to 'active' or 'dead'
 - There should be a function to manually kill a Terminator given its ID.
 - There should be a function to get a list of all living Terminators.
 - You don't need to keep track of ancestry / hierarchy.
 - Expect this part to be run and manually tested in `iex`.
 
-### The API or UI
+### The API / UI
 
-Choose either a RESTful API or a simple Phoenix LiveView interface, whichever you are more comfortable with. If creating a UI, please include a simple JavaScript component that interacts with the LiveView. If you are familiar with Ash Framework, you can use it to create this simple application.
+Create a simple web UI for managing terminators
 
-Functionality requirements:
+Server functionality requirements:
 - Spawn a terminator
 - Manually kill a terminator
 - List all living terminators
+
+UI requirements:
+- Simple index table for listing terminators with three columns each for 'ID', 'name', and 'status'
+- Ability to sort terminators by 'status'
+- Ability to filter terminators by 'name'
+- A kill button for each terminator
 
 ### Bonus points
 
 We know that time is limited, but if you wanted to take a crack at any of the following it'd be great!
 
-* Automated testing (show us how to exercise the API during tests - bonus for automated UI tests!)
-* If you created a UI, add filtering and sorting options on the index table used for listing terminators.
+* Automated testing (show us how to exercise the API during tests - more bonus for automated UI tests that demonstrate functionality!)
+* A simple JS component for the UI, it can be used for the filtering and/or sorting functionality
 * Elevator pitch for deploying this to production
 * Clustering (can you get this to generate Terminators on multiple nodes?)
 * Metrics/monitoring via Telemetry
