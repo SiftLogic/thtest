@@ -34,7 +34,7 @@ The exercise is to model Skynet and Terminators using Elixir. A user can spawn T
 - Each terminator should have three fields
 1. A unique ID
 2. A unique name
-3. A status restricted to 'active' or 'dead'
+3. A status restricted to 'live' or 'dead'
 - There should be a function to manually kill a Terminator given its ID.
 - There should be a function to get a list of all living Terminators.
 - You don't need to keep track of ancestry / hierarchy.
