@@ -37,10 +37,11 @@ The exercise is to model Skynet and Terminators using Elixir. A user can spawn T
 - You don't need to keep track of ancestry / hierarchy.
 - Expect this part to be run and manually tested in `iex`.
 
-### The API
+### The API or UI
 
-Create API endpoints or a simple UI for the following actions. You can pick what API protocol or UI to use, if any.
+Choose either a RESTful API or a simple Phoenix LiveView interface, whichever you are more comfortable with. If creating a UI, please include a simple JavaScript component that interacts with the LiveView. If you are familiar with Ash Framework, you can use it to create this simple application.
 
+Functionality requirements:
 - Spawn a terminator
 - Manually kill a terminator
 - List all living terminators
@@ -49,7 +50,8 @@ Create API endpoints or a simple UI for the following actions. You can pick what
 
 We know that time is limited, but if you wanted to take a crack at any of the following it'd be great!
 
-* Automated testing (show us how to exercise the API during tests)
+* Automated testing (show us how to exercise the API during tests - bonus for automated UI tests!)
+* If you created a UI, add filtering and sorting options on the index table used for listing terminators.
 * Elevator pitch for deploying this to production
 * Clustering (can you get this to generate Terminators on multiple nodes?)
 * Metrics/monitoring via Telemetry
